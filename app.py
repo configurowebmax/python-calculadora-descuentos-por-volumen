@@ -137,12 +137,12 @@ def cargar_al_inicio():
     if not datos:
         return
     try:
-            if "unidades" in datos:
-                document.querySelector("#unidades").value = datos["unidades"]
-            if "precio" in datos:
-                document.querySelector("#precio").value = datos["precio"]
-            if "descuento" in datos:
-                document.querySelector("#descuento").value = datos["descuento"]
+        if "unidades" in datos:
+            document.querySelector("#unidades").value = datos["unidades"]
+        if "precio" in datos:
+            document.querySelector("#precio").value = datos["precio"]
+        if "descuento" in datos:
+            document.querySelector("#descuento").value = datos["descuento"]
         aviso = document.querySelector("#resultado")
         aviso.innerHTML = "📂 Datos cargados. Pulsa <em>Calcular</em>."
         aviso.classList.remove("hidden")
